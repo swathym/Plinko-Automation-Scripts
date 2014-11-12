@@ -1,0 +1,17 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_8,LAUNCHBROWSER,,,,,,
+TC_8,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_8,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_8,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_8,CLICK,NAME,submit,,,,Clicking on Submit to go to home page of SDP UI
+TC_8,CLICK,ID,plinko_form:plkConfig,,,,Config Rule tab able to Click under Plinko
+TC_8,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42""]/a/span",,,,Clicking on Menu 
+TC_8,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42:j_idt46:link""]/span",,,,Placing Cursor on Bundle Offer Matrix 
+TC_8,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42:j_idt46:j_idt49:out""]",,,,Click on Incoming Contract Pending Cancel
+TC_8,CLICK,XPATH,"//*[@id=""prg_item_form:cmdInsertBtmDtl""]",,,,Click on Insert
+TC_8,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt57""]","BUNDLE S2 & TS",,,Enter Description
+TC_8,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt62""]","S;T",,,Enter Eligible Contracts
+TC_8,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt67""]","S,T;S",,,Enter CCC Screen offers
+TC_8,CLICK,XPATH,"//*[@id=""prg_item_form:cmdSaveBtmDtl""]",,,,Click Save
+TC_8,CLICK,ID,logout_button,,,,Performing Logout
+TC_8,CLOSEBROWSER,,,,,,Closing the Browser

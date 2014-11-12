@@ -1,0 +1,27 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_3,LAUNCHBROWSER,,,,,,
+TC_3,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_3,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_3,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_3,CLICK,NAME,submit,,,Clicking on Submit to go to home page of SDP UI,
+TC_3,CLICK,ID,plinko_form:plkConfig,,,Able to Click the Config rule Tab under Plinko ,
+TC_3,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42""]/a/span",,,Click on the Menu Tab ,
+TC_3,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42:j_idt45:out""]",,,11. Click on Bundling Logic Rules,
+TC_3,CLICK,XPATH,"//*[@id=""prg_item_form:cmdInsertBtmDtl""]",,,Click on Insert ,
+TC_3,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt74""]",BUNDLING GSP BY RANGE,Enter Description,,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_form:datatable:0:_t78""]",BUNDLE,Select Bundle from Dropdown,,
+TC_3,CLICK,XPATH,"//*[@id=""prg_item_form:cmdSaveBtmDtl""]",,,Click Save,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t82""]",CONTRACT TYPE,Select Contract Type from Attribute Dropdown,,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t86""]",=,Select = from Rel Opr dropdown,,
+TC_3,SETTEXT,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:j_idt90""]",G,,,Enter G in Value
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t93""]",AND,Select AND from Dropdown,,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:_t82""]",RENEWAL DATE,Select Renewal Date from Dropdown,,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:_t86""]","BTD(0,28)",,Select BTD(0,28) from Dropdown
+TC_3,SETTEXT,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:j_idt90""]",INC.NEXTBILLDATE,,,Enter INC.NEXTBILLDATE in Value
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:_t93""]",AND,Select AND from Dropdown,,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:2:_t82""]",RENEWAL TERM,Select Renewal Term from Dropdown,,
+TC_3,selectfromdropdown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:2:_t86""]",=,Select = from Rel Opr dropdown,,
+TC_3,SETTEXT,XPATH,"//*[@id=""prg_item_dtl_form:datatable:2:j_idt90""]",INC.RENEWALFREQUENCY,Enter INC.RENEWALFREQUENCY in Value
+TC_3,CLICK,XPATH,"//*[@id=""prg_item_dtl_form:cmdSaveBtmDtl""]",,,Click Save,
+TC_3,CLICK,ID,logout_button,,,,Performing Logout
+TC_3,CLOSEBROWSER,,,,,,Closing the Browser

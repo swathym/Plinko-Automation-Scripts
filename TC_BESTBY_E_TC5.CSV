@@ -1,0 +1,21 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_5,LAUNCHBROWSER,,,,,,
+TC_5,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_5,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_5,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_5,CLICK,NAME,submit,,,,Clicking on Submit to go to home page of SDP UI
+TC_5,CLICK,XPATH,"//*[@id=""plinko_form:plkConfig""]",,,,Config Rules Verifying that able to Click Tab under Plinko 
+TC_5,CLICK,XPATH,"//*[@id=""frmApp:j_idt55:j_idt56""]/a/span",,,,ClickinG on Menu button on Email Bundle Breaker Rule
+TC_5,CLICK,XPATH,"//*[@id=""frmApp:j_idt55:j_idt56:j_idt59:out""]",,,,Selecting 11 Email Template ID
+TC_5,CLICK,XPATH,"//*[@id=""prg_item_form:cmdInsertBtmDtl""]",,,,Clicking on Insert Button
+TC_5,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt60""]",Standalone M Scenario,,,
+TC_5,selectFromDropDown,XPATH,"//*[@id=""prg_item_form:datatable:0:_t65""]",PROO1,,,
+TC_5,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt70""]",M,,,Inputing M
+TC_5,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt74""]",TSH_PROO1_M1,,,Inputing Email Template ID
+TC_5,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:1:j_idt60""]",GSMS,,,Inputing eligible contracts
+TC_5,selectFromDropDown,XPATH,"//*[@id=""prg_item_form:datatable:1:_t65""]",PROO2,,,
+TC_5,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:1:j_idt70""]",GSMS,,,
+TC_5,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:1:j_idt74""]",TSH_PROO2_GMs,,,
+TC_5,CLICK,XPATH,"//*[@id=""prg_item_form:cmdSaveBtmDtl""]",,,,Click Save
+TC_5,CLICK,ID,logout_button,,,,Performing Logout
+TC_5,CLOSEBROWSER,,,,,Closing the Browser,

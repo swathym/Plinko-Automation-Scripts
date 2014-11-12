@@ -1,0 +1,19 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_2,LAUNCHBROWSER,,,,,,
+TC_2,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_2,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_2,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_2,CLICK,NAME,submit,,,Clicking on Submit to go to home page of SDP UI,
+TC_2,CLICK,ID,plinko_form:plkConfig,,,Config Rule tab able to Click under Plinko,
+TC_2,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42""]/a/span",,,,Clicking on Menu 
+TC_2,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42:j_idt44:out""]",,,Clicking in Rule 09. BUNDLE BREAKER RULES,
+TC_2,CLICK,XPATH,//*[@id="prg_item_form:cmdInsertBtmDtl"],,,Click on Insert Button
+TC_2,SETTEXT,XPATH,//*[@id="prg_item_form:datatable:0:j_idt74"],INCOMING GSP BREAK BUNDLE,,,Enter Description
+TC_2,selectFromDropDown,XPATH,//*[@id="prg_item_form:datatable:0:_t78"],INCOMING,,Select RuleType as Incoming from Dropdown
+TC_2,CLICK,XPATH,//*[@id="prg_item_form:cmdSaveBtmDtl"],,,Click Save
+TC_2,selectFromDropDown,XPATH,//*[@id="prg_item_dtl_form:datatable:0:_t82"],CONTRACT TYPE,,Select Attribute as Contract type from Dropdown 
+TC_2,selectFromDropDown,XPATH,//*[@id="prg_item_dtl_form:datatable:0:_t86"],=,Select = from Dropdown
+TC_2,SETTEXT,XPATH,//*[@id="prg_item_dtl_form:datatable:0:j_idt90"],G,Enter G in Value textbox
+TC_2,CLICK//*[@id="prg_item_dtl_form:cmdSaveBtmDtl"],,,Click on Save
+TC_2,CLICK,ID,logout_button,,,,Performing Logout
+TC_2,CLOSEBROWSER,,,,,,Closing the Browser

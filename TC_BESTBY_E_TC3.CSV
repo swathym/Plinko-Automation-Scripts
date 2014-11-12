@@ -1,0 +1,19 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_3,LAUNCHBROWSER,,,,,,
+TC_3,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_3,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_3,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_3,CLICK,NAME,submit,,,,Clicking on Submit to go to home page of SDP UI
+TC_3,CLICK,XPATH,"//*[@id=""plinko_form:plkConfig""]",,,,Config Rules Verifying that able to Click Tab under Plinko 
+TC_3,CLICK,XPATH,"//*[@id=""frmApp:j_idt55:j_idt56""]/a/span",,,,ClickinG on Menu button on Email Bundle Breaker Rule
+TC_3,CLICK,XPATH,"//*[@id=""frmApp:j_idt55:j_idt56:j_idt57:out""]",,,,Selecting 07 Bundle Breaker Rules
+TC_3,CLICK,XPATH,"//*[@id=""prg_item_form:cmdInsertBtmDtl""]",,,,Clicking on Insert Button
+TC_3,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt74""]",Multiple M Bundle Breaker Scenario,,,
+TC_3,selectFromDropDown,XPATH,"//*[@id=""prg_item_form:datatable:0:_t78""]",MULTIPLE,,,
+TC_3,CLICK,XPATH,"//*[@id=""prg_item_form:cmdSaveBtmDtl""]",,,,Bundle Breaker rule saved
+TC_3,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t82""]",CONTRACT TYPE,,,Selecting Contract Type 
+TC_3,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t86""]",=,,,Selecting rel operator
+TC_3,SETTEXT,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:j_idt90""]",M,,,
+TC_3,CLICK,XPATH,"//*[@id=""prg_item_dtl_form:cmdSaveBtmDtl""]",,,,Click Save
+TC_3,CLICK,ID,logout_button,,,,Performing Logout
+TC_3,CLOSEBROWSER,,,,,Closing the Browser,

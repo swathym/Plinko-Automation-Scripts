@@ -1,0 +1,22 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_1,LAUNCHBROWSER,,,,,,
+TC_1,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_1,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_1,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_1,CLICK,NAME,submit,,,Clicking on Submit to go to home page of SDP UI,
+TC_1,CLICK,ID,plinko_form:plkConfig,,,Config Rules Verifying that able to Click Tab under Plinko ,
+TC_1,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42""]/a/span",,,,
+TC_1,CLICK,XPATH,"//*[@id=""frmApp:j_idt41:j_idt42:j_idt43:out""]",,,,Selecting 07 Incoming Contract Rule
+TC_1,CLICK,XPATH,"//*[@id=""prg_item_form:cmdInsertBtmDtl""]",,,,Incoming Contract Rules page displayed
+TC_1,SETTEXT,XPATH,"//*[@id=""prg_item_form:datatable:0:j_idt74""]",Incoming TS is Cancelled,,,Adding a rule
+TC_1,CLICK,XPATH,"//*[@id=""prg_item_form:cmdSaveBtmDtl""]",,,,
+TC_1,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t82""]",CONTRACT TYPE,,,Selecting  Attribute
+TC_1,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t86""]",=,,,Selecting rel attribute
+TC_1,SETTEXT,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:j_idt90""]",T,,,Inputing text T
+TC_1,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:0:_t93""]",AND,,,Selecting Join attr
+TC_1,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:_t82""]",CONTRACT STATUS,,,Selecting Attribute
+TC_1,selectFromDropDown,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:_t86""]",=,,,Selecting rel attribute
+TC_1,SETTEXT,XPATH,"//*[@id=""prg_item_dtl_form:datatable:1:j_idt90""]",C,,,Inputing text C
+TC_1,CLICK,XPATH,"//*[@id=""prg_item_dtl_form:cmdSaveBtmDtl""]",,,,Click Save
+TC_1,CLICK,ID,"logout_button",,,,Performing Logout
+TC_1,CLOSEBROWSER,,,,,Closing the Browser

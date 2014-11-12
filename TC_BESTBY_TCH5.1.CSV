@@ -1,0 +1,16 @@
+TESTCASENAME,INPUTACTION,ELEMENTSEARCHTYPE,ELEMENTSEARCHVALUE,USERINPUT,EXPECTEDPROPERTY,EXPECTEDVALUE,NOTES
+TC_5.1,LAUNCHBROWSER,,,,,,
+TC_5.1,OPENURL,,,https://dlg14app:20143/SDPUI/pages/login/login.jsf,,,Open SDP URL
+TC_5.1,SETTEXT,ID,j_username,tester,,,Log in to SDP UI
+TC_5.1,SETTEXT,ID,j_password,test1234,,,Log in to SDP UI
+TC_5.1,CLICK,NAME,submit,,,,Clicking on Submit to go to home page of SDP UI
+TC_5.1,CLICK,XPATH,"//*[@id=""plinko_form:plkTestHarn""]",,,,able to click on Test Harness Tab
+TC_5.1,SETTEXT,XPATH,"//*[@id=""prg_item_form:test_harn_cntrctID""]",1600944661,,,Enter Contract ID.
+TC_5.1,SETTEXT,XPATH,"//*[@id=""prg_item_form:test_harn_serl_num""]",KSPPHOOBFY148273192,,,Enter Serial Number
+TC_5.1,CLICK,XPATH,"//*[@id=""prg_item_form:testHarnSearch""]",,,,Clicking on Submit to go to home page of SDP UI
+TC_5.1,VERIFYTEXT,XPATH,"//*[@id=""test_harn_offers_one_grid:_t84""]/tbody/tr[1]/td[3]",,,"MS",Verify for the standalone MS
+TC_5.1,VERIFYTEXT,XPATH,"//*[@id=""test_harn_offers_one_grid:_t84""]/tbody/tr[2]/td[3]",,,"S2TSMS",Verify for the bundle s2/ts/ms
+TC_5.1,VERIFYTEXT,XPATH,"//*[@id=""test_harn_offers_one_grid:_t84""]/tbody/tr[3]/td[3]",,,"S2TS",Verify for the bundle s2/ts
+TC_5.1,VERIFYTEXT,XPATH,"//*[@id=""test_harn_offers_one_grid:_t84""]/tbody/tr[4]/td[3]",,,"S2",Verify for the bundle s2
+TC_5.1,CLICK,ID,logout_button,,,,
+TC_5.1,CLOSEBROWSER,,,,,,
